@@ -1,0 +1,88 @@
+<table id="classification" class="datatable" style="width: 100%">
+    <thead>
+    <tr>
+        <th class="arch">Architecture</th>
+        <th class="ca">
+            Trained<br/>
+            Accuracy
+        </th>
+        
+        <th class="aa">
+            Decode <br/>
+             $\Delta$ ACC (mean / max)
+        </th>
+
+        <th class="aa">
+            Resize <br/>
+             $\Delta$ ACC
+        </th>
+
+        <th class="aa">
+            Color Mode <br/>
+             $\Delta$ ACC
+        </th>
+
+        <th class="aa">
+            FP16 <br/>
+             $\Delta$ ACC
+        </th>
+
+        <th class="aa">
+            Int8 <br/>
+             $\Delta$ ACC
+        </th>
+
+        <th class="aa">
+            Ceil Mode <br/>
+             $\Delta$ ACC
+        </th>
+
+        <th class="aa">
+            Combined <br/>
+             $\Delta$ ACC
+        </th>
+
+
+
+        
+        <th class="extra-data">Extra <br/>data</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+        <td class="archtd">ResNet-18x0.25</td>
+        <td class="aatd">48.96%</td>
+        #decode
+        <td class="aatd">0.41% / 0.42%</td>
+        #resize
+        <td class="aatd">4.02% / 9.31%</td>
+        #color
+        <td class="aatd">0.20%</td>
+        #fp16
+        <td class="aatd">0.01%</td>
+        #int8
+        <td class="aatd">0.04%</td>
+        #ceil
+        <td class="aatd">-</td>
+        #combined
+        <td class="aatd">9.97%</td>
+
+    </tr>
+    
+    </tbody>
+</table>
+<script>
+    $(document).ready(function () {
+        $("#cifar10_leaderboard_corruptions").DataTable({
+            lengthMenu: [15, 25, 50, 75, 100],
+            "drawCallback": function (settings) {
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+            },
+            language: {
+                searchPlaceholder: "Papers, architectures, venues"
+            },
+            
+        });
+    });
+</script>
