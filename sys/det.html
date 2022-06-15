@@ -1,0 +1,198 @@
+<table id="classification" class="datatable" style="width: 100%">
+    <thead>
+    <tr>
+        <th class="arch">Architecture</th>
+        <th class="ca">
+            Trained<br/>
+            mAP
+        </th>
+        
+        <th class="aa">
+            Decode <br/>
+             &Delta; mAP (mean / max)
+        </th>
+
+        <th class="aa">
+            Resize <br/>
+             &Delta; mAP (mean / max)
+        </th>
+
+        <th class="aa">
+            Color Mode <br/>
+             &Delta; mAP
+        </th>
+
+        <th class="aa">
+            Upsample <br/>
+             &Delta; ACC
+        </th>
+
+        <th class="aa">
+            Int8 <br/>
+             &Delta; ACC
+        </th>
+
+        <th class="aa">
+            Ceil Mode <br/>
+             &Delta; ACC
+        </th>
+
+        <th class="aa">
+            Pose-processing <br/>
+             &Delta; ACC
+        </th>
+
+        <th class="aa">
+            Combined <br/>
+             &Delta; ACC
+        </th>
+
+
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+        <td class="archtd">Faster-RCNN-ResNet34</td>
+        <td class="aatd">36.76%</td>
+<!--        decode-->
+        <td class="aatd">0.02% / 0.04%</td>
+<!--        resize-->
+        <td class="aatd">0.93% / 2.63%</td>
+<!--        color-->
+        <td class="aatd">0.25%</td>
+<!--        upsample-->
+        <td class="aatd">1.28%</td>
+<!--        int8-->
+        <td class="aatd">0.06%</td>
+<!--        ceil-->
+        <td class="aatd">2.50%</td>
+<!--        post-->
+        <td class="aatd">2.29%</td>
+<!--        combined-->
+        <td class="aatd">10.25%</td>
+    </tr>
+
+    <tr>
+        <td class="archtd">Faster-RCNN-ResNet34</td>
+        <td class="aatd">36.76%</td>
+<!--        decode-->
+        <td class="aatd">0.02% / 0.04%</td>
+<!--        resize-->
+        <td class="aatd">0.93% / 2.63%</td>
+<!--        color-->
+        <td class="aatd">0.25%</td>
+<!--        upsample-->
+        <td class="aatd">1.28%</td>
+<!--        int8-->
+        <td class="aatd">0.06%</td>
+<!--        ceil-->
+        <td class="aatd">2.50%</td>
+<!--        post-->
+        <td class="aatd">2.29%</td>
+<!--        combined-->
+        <td class="aatd">10.25%</td>
+    </tr>
+
+    <tr>
+        <td class="archtd">Faster-RCNN-ResNet50</td>
+        <td class="aatd">37.36%</td>
+<!--        decode-->
+        <td class="aatd">0.02% / 0.01%</td>
+<!--        resize-->
+        <td class="aatd">1.12% / 3.15%</td>
+<!--        color-->
+        <td class="aatd">0.10%</td>
+<!--        upsample-->
+        <td class="aatd">1.66%</td>
+<!--        int8-->
+        <td class="aatd">0.10%</td>
+<!--        ceil-->
+        <td class="aatd">3.14%</td>
+<!--        post-->
+        <td class="aatd">2.39%</td>
+<!--        combined-->
+        <td class="aatd">10.67%</td>
+    </tr>
+
+    <tr>
+        <td class="archtd">Faster-RCNN-MobileNetV2</td>
+        <td class="aatd">30.32%</td>
+<!--        decode-->
+        <td class="aatd">0.01% / 0.01%</td>
+<!--        resize-->
+        <td class="aatd">0.38% / 1.14%</td>
+<!--        color-->
+        <td class="aatd">0.24%</td>
+<!--        upsample-->
+        <td class="aatd">0.96%</td>
+<!--        int8-->
+        <td class="aatd">0.07%</td>
+<!--        ceil-->
+        <td class="aatd">-</td>
+<!--        post-->
+        <td class="aatd">2.23%</td>
+<!--        combined-->
+        <td class="aatd">3.45%</td>
+    </tr>
+
+    <tr>
+        <td class="archtd">RetintNet-ResNet34</td>
+        <td class="aatd">35.71%</td>
+<!--        decode-->
+        <td class="aatd">0.01% / 0.01%</td>
+<!--        resize-->
+        <td class="aatd">0.77% / 2.20%</td>
+<!--        color-->
+        <td class="aatd">0.29%</td>
+<!--        upsample-->
+        <td class="aatd">0.35%</td>
+<!--        int8-->
+        <td class="aatd">0.10%</td>
+<!--        ceil-->
+        <td class="aatd">2.72%</td>
+<!--        post-->
+        <td class="aatd">3.44%</td>
+<!--        combined-->
+        <td class="aatd">8.21%</td>
+    </tr>
+
+    <tr>
+        <td class="archtd">RetintNet-ResNet50</td>
+        <td class="aatd">36.59%</td>
+<!--        decode-->
+        <td class="aatd">0.01% / 0.02%</td>
+<!--        resize-->
+        <td class="aatd">0.99% / 2.78%</td>
+<!--        color-->
+        <td class="aatd">0.36%</td>
+<!--        upsample-->
+        <td class="aatd">0.69%</td>
+<!--        int8-->
+        <td class="aatd">0.03%</td>
+<!--        ceil-->
+        <td class="aatd">3.12%</td>
+<!--        post-->
+        <td class="aatd">3.00%</td>
+<!--        combined-->
+        <td class="aatd">8.93%</td>
+    </tr>
+
+
+    
+    </tbody>
+</table>
+<script>
+    $(document).ready(function () {
+        $("#cifar10_leaderboard_corruptions").DataTable({
+            lengthMenu: [15, 25, 50, 75, 100],
+            "drawCallback": function (settings) {
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+            },
+            language: {
+                searchPlaceholder: "Papers, architectures, venues"
+            },
+            
+        });
+    });
+</script>
