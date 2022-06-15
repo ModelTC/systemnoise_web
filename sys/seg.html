@@ -1,0 +1,128 @@
+<table id="classification" class="datatable" style="width: 100%">
+    <thead>
+    <tr>
+        <th class="arch">Architecture</th>
+        <th class="ca">
+            Trained<br/>
+            mIoU
+        </th>
+        
+        <th class="aa">
+            Decode <br/>
+             &Delta; mIoU (mean / max)
+        </th>
+
+        <th class="aa">
+            Resize <br/>
+             &Delta; mIoU (mean / max)
+        </th>
+
+        <th class="aa">
+            Color Mode <br/>
+             &Delta; mIoU
+        </th>
+
+        <th class="aa">
+            Upsample <br/>
+             &Delta; ACC
+        </th>
+
+        <th class="aa">
+            Int8 <br/>
+             &Delta; ACC
+        </th>
+
+        <th class="aa">
+            Ceil Mode <br/>
+             &Delta; ACC
+        </th>
+
+        <th class="aa">
+            Combined <br/>
+             &Delta; ACC
+        </th>
+
+
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr>
+        <td class="archtd">DeepLabv3-ResNet50</td>
+        <td class="aatd">78.05%</td>
+<!--        decode-->
+        <td class="aatd">0.001% / 0.001%</td>
+<!--        resize-->
+        <td class="aatd">0.02% / 0.04%</td>
+<!--        color-->
+        <td class="aatd">0.02%</td>
+<!--        upsample-->
+        <td class="aatd">3.06%</td>
+<!--        int8-->
+        <td class="aatd">0.01%</td>
+<!--        ceil-->
+        <td class="aatd">4.02%</td>
+<!--        combined-->
+        <td class="aatd">4.51%</td>
+    </tr>
+
+    <tr>
+        <td class="archtd">DeepLabv3-ResNet101</td>
+        <td class="aatd">79.88%</td>
+<!--        decode-->
+        <td class="aatd">0.001% / 0.001%</td>
+<!--        resize-->
+        <td class="aatd">0.01% / 0.02%</td>
+<!--        color-->
+        <td class="aatd">0.02%</td>
+<!--        upsample-->
+        <td class="aatd">3.85%</td>
+<!--        int8-->
+        <td class="aatd">0.01%</td>
+<!--        ceil-->
+        <td class="aatd">4.65%</td>
+<!--        combined-->
+        <td class="aatd">5.11%</td>
+    </tr>
+
+    <tr>
+        <td class="archtd">U-Net</td>
+        <td class="aatd">61.98%</td>
+<!--        decode-->
+        <td class="aatd">0.003% / 0.005%</td>
+<!--        resize-->
+        <td class="aatd">0.04% / 0.06%</td>
+<!--        color-->
+        <td class="aatd">0.04%</td>
+<!--        upsample-->
+        <td class="aatd">2.74%</td>
+<!--        int8-->
+        <td class="aatd">0.02%</td>
+<!--        ceil-->
+        <td class="aatd">-</td>
+<!--        combined-->
+        <td class="aatd">2.85%</td>
+    </tr>
+
+
+
+
+
+
+    
+    </tbody>
+</table>
+<script>
+    $(document).ready(function () {
+        $("#cifar10_leaderboard_corruptions").DataTable({
+            lengthMenu: [15, 25, 50, 75, 100],
+            "drawCallback": function (settings) {
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+            },
+            language: {
+                searchPlaceholder: "Papers, architectures, venues"
+            },
+            
+        });
+    });
+</script>
