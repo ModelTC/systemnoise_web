@@ -273,7 +273,7 @@ clean_acc, robust_acc = benchmark(model,
       <div class="heading">
         <p>Dataset</p>
       </div>
-
+      <div class="vspace50"></div>
       <div id="leaderboard" class="container button-list">
         <div class="heading">
           <u>
@@ -282,9 +282,11 @@ clean_acc, robust_acc = benchmark(model,
         </div>
         <a class="btn btn-secondary" href="https://drive.google.com/file/d/13733k-iXqGMw_B2LPlKspnr5fQrMmZBI/view?usp=sharing"> ImageNet: Color_Mode Noise</a>
         <a class="btn btn-secondary" href="https://drive.google.com/file/d/1GnU4wCa5Nsd4jDDHvavJZvdnFjhcyApr/view?usp=sharing"> ImageNet: Decoder+Resize+Color_Mode Noise</a>
+        <div class="heading">
           <u>
             SysNoise on MSCOCO
           </u>
+        </div>
         <a class="btn btn-secondary" href=https://drive.google.com/file/d/1FSD5aoQNwvsUaY6bdCIguwTQd2gOgqcs/view?usp=sharing"> MSCOCO: Color_Mode Noise </a>
         <a class="btn btn-secondary" href="https://drive.google.com/file/d/1j2kdJTYcjzdqQBZ6ZQkJZ8H5lQPzp0Wk/view?usp=sharing"> MSCOCO: Decoder+Resize+Color_Mode Noise </a>
       </div>
@@ -322,58 +324,69 @@ clean_acc, robust_acc = benchmark(model,
 
     <div class="vspace50"></div>
 
-    <section id="contribute">
-      <div class="details">
-        <div class="box2">
-          <p>Contribute to RobustBench!</p>
-          <div class="divider">
-            <hr />
-          </div>
-          We welcome any contribution in terms of both new robust models and
-          evaluations. Please check
-          <a href="https://github.com/RobustBench/robustbench#how-to-contribute">here</a>
-          for more details.
-          <br />
-          <br />
-          Feel free to contact us at
-          <a href="mailto:adversarial.benchmark@gmail.com">adversarial.benchmark@gmail.com</a>
-        </div>
-        <div class="box2">
-          <p>Maintainers</p>
-          <div class="divider">
-            <hr />
-          </div>
-          <ul>
-            <li>
-              <a href="https://twitter.com/fra__31" target="_blank">Francesco Croce
-              </a>
-              <a href="https://twitter.com/fra__31"><i class="fas fa-globe"></i></a>
-              <a href="https://github.com/fra31"><i class="fab fa-github"></i></a>
-              <a href="https://scholar.google.com/citations?user=laq9cq0AAAAJ"><i class="ai ai-google-scholar"></i></a>
-            </li>
-            <li>
-              <a href="https://people.epfl.ch/maksym.andriushchenko" target="_blank">Maksym Andriushchenko</a>
-              <a href="https://people.epfl.ch/maksym.andriushchenko"><i class="fas fa-globe"></i></a>
-              <a href="https://github.com/max-andr"><i class="fab fa-github"></i></a>
-              <a href="https://scholar.google.com/citations?user=ZNtuJYoAAAAJ"><i class="ai ai-google-scholar"></i></a>
-            </li>
-            <li>
-              <a href="https://vsehwag.github.io/" target="_blank">Vikash Sehwag</a>
-              <a href="https://vsehwag.github.io/"><i class="fas fa-globe"></i></a>
-              <a href="https://github.com/VSehwag"><i class="fab fa-github"></i></a>
-              <a href="https://scholar.google.com/citations?user=JAkeEG8AAAAJ"><i class="ai ai-google-scholar"></i></a>
-            </li>
-            <li>
-              <a href="https://edoardo.science" target="_blank">Edoardo Debenedetti</a>
-              <a href="https://edoardo.science"><i class="fas fa-globe"></i></a>
-              <a href="https://github.com/dedeswim"><i class="fab fa-github"></i></a>
-              <a href="https://twitter.com/edoardo_debe"><i class="fab fa-twitter"></i></a>
-            </li>
-          </ul>
-        </div>
+    <section id="citation">
+      <div class="heading">
+        <p>Contribute to Us</p>
       </div>
+      Welcome to provide us with test results for new models, as well as models that are robust to SysNoise.
+      Contact me to have your model and results updated in the leaderboard.
+      If you have other ideas about this noise, you can contact me at
+      <a href="mailto:wangyan3@sensetime.com">wangyan3@sensetime.com</a>
+
     </section>
-  </div>
+
+<!--    <section id="contribute">-->
+<!--      <div class="details">-->
+<!--        <div class="box2">-->
+<!--          <p>Contribute to RobustBench!</p>-->
+<!--          <div class="divider">-->
+<!--            <hr />-->
+<!--          </div>-->
+<!--          We welcome any contribution in terms of both new robust models and-->
+<!--          evaluations. Please check-->
+<!--          <a href="https://github.com/RobustBench/robustbench#how-to-contribute">here</a>-->
+<!--          for more details.-->
+<!--          <br />-->
+<!--          <br />-->
+<!--          Feel free to contact us at-->
+<!--          <a href="mailto:adversarial.benchmark@gmail.com">adversarial.benchmark@gmail.com</a>-->
+<!--        </div>-->
+<!--        <div class="box2">-->
+<!--          <p>Maintainers</p>-->
+<!--          <div class="divider">-->
+<!--            <hr />-->
+<!--          </div>-->
+<!--          <ul>-->
+<!--            <li>-->
+<!--              <a href="https://twitter.com/fra__31" target="_blank">Francesco Croce-->
+<!--              </a>-->
+<!--              <a href="https://twitter.com/fra__31"><i class="fas fa-globe"></i></a>-->
+<!--              <a href="https://github.com/fra31"><i class="fab fa-github"></i></a>-->
+<!--              <a href="https://scholar.google.com/citations?user=laq9cq0AAAAJ"><i class="ai ai-google-scholar"></i></a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://people.epfl.ch/maksym.andriushchenko" target="_blank">Maksym Andriushchenko</a>-->
+<!--              <a href="https://people.epfl.ch/maksym.andriushchenko"><i class="fas fa-globe"></i></a>-->
+<!--              <a href="https://github.com/max-andr"><i class="fab fa-github"></i></a>-->
+<!--              <a href="https://scholar.google.com/citations?user=ZNtuJYoAAAAJ"><i class="ai ai-google-scholar"></i></a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://vsehwag.github.io/" target="_blank">Vikash Sehwag</a>-->
+<!--              <a href="https://vsehwag.github.io/"><i class="fas fa-globe"></i></a>-->
+<!--              <a href="https://github.com/VSehwag"><i class="fab fa-github"></i></a>-->
+<!--              <a href="https://scholar.google.com/citations?user=JAkeEG8AAAAJ"><i class="ai ai-google-scholar"></i></a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://edoardo.science" target="_blank">Edoardo Debenedetti</a>-->
+<!--              <a href="https://edoardo.science"><i class="fas fa-globe"></i></a>-->
+<!--              <a href="https://github.com/dedeswim"><i class="fab fa-github"></i></a>-->
+<!--              <a href="https://twitter.com/edoardo_debe"><i class="fab fa-twitter"></i></a>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
+<!--  </div>-->
 
   <hr class="bottomrule" />
 
