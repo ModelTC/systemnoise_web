@@ -269,98 +269,25 @@ clean_acc, robust_acc = benchmark(model,
 
     <div class="vspace30"></div>
 
-    <section id="faq">
+    <section id="dataset">
       <div class="heading">
-        <p>FAQ</p>
+        <p>Dataset</p>
       </div>
 
-      <p class="qa-box">
-        <span class="question">&#10148; How does the RobustBench leaderboard differ from the
-          <a href="https://github.com/fra31/auto-attack">AutoAttack leaderboard</a>? 🤔
-        </span>
-        <br />
-        <span class="answer"> The <a href="https://github.com/fra31/auto-attack">AutoAttack leaderboard</a> was
-          the starting point of RobustBench. Now only the RobustBench leaderboard is actively maintained.
-        </span>
-      </p>
-
-      <p class="qa-box">
-        <span class="question">&#10148; How does the RobustBench leaderboard differ from
-          <a href="https://www.robust-ml.org/">robust-ml.org</a>? 🤔
-        </span>
-        <br />
-        <span class="answer"><a href="https://www.robust-ml.org/">robust-ml.org</a> focuses on
-          <em>adaptive</em> evaluations, but we provide a
-          <strong>standardized benchmark</strong>. Adaptive evaluations have been very useful (e.g., see
-          <a href="https://arxiv.org/abs/2002.08347">Tramer et al., 2020</a>),
-          but they are also very time-consuming and cannot be standardized by definition. Instead, we argue
-          that one can estimate robustness accurately mostly <em>without</em> adaptive
-          attacks but for this one has to introduce some restrictions on the
-          considered models (see <a href="https://arxiv.org/abs/2010.09670">our paper</a> for more details).
-          However, we do welcome adaptive evaluations and we are always interested in showing the best known
-          robust accuracy.
-        </span>
-      </p>
-
-      <p class="qa-box">
-        <span class="question">&#10148; How is it related to libraries like
-          <a href="https://github.com/bethgelab/foolbox">foolbox</a> /
-          <a href="https://github.com/tensorflow/cleverhans">cleverhans</a> /
-          <a href="https://github.com/BorealisAI/advertorch">advertorch</a>? 🤔
-        </span>
-        <br />
-        <span class="answer">These libraries provide implementations of different
-          <em>attacks</em>. Besides the standardized benchmark,
-          <strong>RobustBench</strong> additionally provides a repository of the
-          most robust models. So you can start using the robust models in one
-          line of code (see the tutorial
-          <a href="https://github.com/RobustBench/robustbench#model-zoo-quick-tour">here</a>).</span>
-      </p>
-
-      <p class="qa-box">
-        <span class="question">&#10148; Why is Lp-robustness still interesting in 2021? 🤔
-        </span>
-        <br />
-        <span class="answer">There are numerous interesting applications of Lp-robustness that
-          span transfer learning (<a href="https://arxiv.org/abs/2007.08489">Salman et al. (2020)</a>,
-          <a href="https://arxiv.org/abs/2007.05869">Utrera et al. (2020)</a>),
-          interpretability (<a href="https://arxiv.org/abs/1805.12152">Tsipras et al. (2018)</a>, <a
-            href="https://arxiv.org/abs/1910.08640">Kaur et al. (2019)</a>,
-          <a href="https://arxiv.org/abs/1906.00945">Engstrom et al. (2019)</a>), security (<a
-            href="https://arxiv.org/abs/1811.03194">Tramèr et al. (2018)</a>,
-          <a href="https://arxiv.org/abs/1906.07153">Saadatpanah et al. (2019)</a>), generalization (<a
-            href="https://arxiv.org/abs/1911.09665">Xie et al. (2019)</a>, <a
-            href="https://arxiv.org/abs/1909.11764">Zhu et al. (2019)</a>,
-          <a href="https://arxiv.org/abs/2004.10934">Bochkovskiy et al. (2020)</a>), robustness to unseen perturbations
-          (<a href="https://arxiv.org/abs/1911.09665">Xie et al. (2019)</a>, <a
-            href="https://arxiv.org/abs/1905.01034">Kang et al. (2019)</a>),
-          stabilization of GAN training (<a href="https://arxiv.org/abs/2008.03364">Zhong et al. (2020)</a>).</span>
-      </p>
-
-      <p class="qa-box">
-        <span class="question">&#10148; What about verified adversarial robustness? 🤔
-        </span>
-        <br />
-        <span class="answer">We mostly focus on defenses which improve
-          <em>empirical</em> robustness, given the lack of clarity regarding
-          which approaches really improve robustness and which only make some
-          particular attacks unsuccessful.
-          However, we do not restrict submissions of verifiably robust models (e.g., we have
-          <a href="https://arxiv.org/abs/1906.06316">Zhang et al. (2019)</a> in our CIFAR-10 Linf leaderboard).
-          For methods targeting verified robustness, we encourage the readers to check out
-          <a href="https://arxiv.org/abs/1902.08722">Salman et al. (2019)</a>
-          and <a href="https://arxiv.org/abs/2009.04131">Li et al. (2020)</a>.
-        </span>
-      </p>
-
-      <p class="qa-box">
-        <span class="question">&#10148; What if I have a better attack than the one used in this
-          benchmark? 🤔
-        </span>
-        <br />
-        <span class="answer">We will be happy to add a better attack or any adaptive evaluation
-          that would complement our default standardized attacks!</span>
-      </p>
+      <div id="leaderboard" class="container button-list">
+        <div class="heading">
+          <u>
+            SysNoise on ImageNet
+          </u>
+        </div>
+        <a class="btn btn-secondary" href="https://drive.google.com/file/d/13733k-iXqGMw_B2LPlKspnr5fQrMmZBI/view?usp=sharing"> ImageNet: Color_Mode Noise</a>
+        <a class="btn btn-secondary" href="https://drive.google.com/file/d/1GnU4wCa5Nsd4jDDHvavJZvdnFjhcyApr/view?usp=sharing"> ImageNet: Decoder+Resize+Color_Mode Noise</a>
+          <u>
+            SysNoise on MSCOCO
+          </u>
+        <a class="btn btn-secondary" href=https://drive.google.com/file/d/1FSD5aoQNwvsUaY6bdCIguwTQd2gOgqcs/view?usp=sharing"> MSCOCO: Color_Mode Noise </a>
+        <a class="btn btn-secondary" href="https://drive.google.com/file/d/1j2kdJTYcjzdqQBZ6ZQkJZ8H5lQPzp0Wk/view?usp=sharing"> MSCOCO: Decoder+Resize+Color_Mode Noise </a>
+      </div>
     </section>
 
 
@@ -450,10 +377,10 @@ clean_acc, robust_acc = benchmark(model,
 
   <hr class="bottomrule" />
 
-  <footer>
-    <small>&copy; 2021, RobustBench;
-      <a href="https://icons8.com/icon/100413/access">Icons from Icons8</a></small>
-  </footer>
+<!--  <footer>-->
+<!--    <small>&copy; 2021, RobustBench;-->
+<!--      <a href="https://icons8.com/icon/100413/access">Icons from Icons8</a></small>-->
+<!--  </footer>-->
 
   <script>
     // When the user scrolls the page, execute myFunction
