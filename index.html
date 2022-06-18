@@ -267,13 +267,13 @@ clean_acc, robust_acc = benchmark(model,
     </section>
 
 
-    <div class="vspace30"></div>
+    <div class="vspace50"></div>
 
     <section id="dataset">
       <div class="heading">
         <p>Dataset</p>
       </div>
-      <div class="vspace50"></div>
+      <div class="vspace30"></div>
       <div id="leaderboard" class="container button-list">
         <div class="heading">
           <u>
@@ -300,8 +300,8 @@ clean_acc, robust_acc = benchmark(model,
       <div class="heading">
         <p>Citation</p>
       </div>
-      Consider citing our whitepaper if you want to reference our leaderboard or if you are using the models from the
-      Model Zoo:
+      Consider citing our work by following bibtex: 
+<!--      Model Zoo:-->
       <!--      @article{croce2020robustbench,-->
       <!--        title={RobustBench: a standardized adversarial robustness benchmark},-->
       <!--        author={Croce, Francesco and Andriushchenko, Maksym and Sehwag, Vikash and Flammarion, Nicolas and Chiang, Mung and Mittal, Prateek and Matthias Hein},-->
@@ -309,14 +309,20 @@ clean_acc, robust_acc = benchmark(model,
       <!--        year={2020}-->
       <!--      }-->
       <!-- HTML generated using hilite.me -->
+<!--      @article{2022sysnoise,-->
+<!--    title={SysNoise: Exploring and Benchmarking Training-Deployment System Inconsistency},-->
+<!--    author={Yan Wang and Yuhang Li and Ruihao Gong and Aishan Liu and Yanfei Wang-->
+<!--    and Jian Hu and Yongqiang Yao and Tianzi Xiao and Fengwei Yu and Xianglong Liu},-->
+<!--    year={2022}-->
+}
       <div
         style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.0em .0em .0em .0em;padding:.2em .6em;">
-        <pre style="margin: 0; line-height: 125%"><span style="color: #555555; font-weight: bold">@article</span>{croce2020robustbench,
-    title<span style="color: #333333">=</span>{RobustBench: a standardized adversarial robustness benchmark},
-    author<span style="color: #333333">=</span>{Croce, Francesco <span style="color: #000000; font-weight: bold">and</span> Andriushchenko, Maksym <span style="color: #000000; font-weight: bold">and</span> Sehwag, Vikash <span style="color: #000000; font-weight: bold">and</span> Debenedetti, Edoardo <span style="color: #000000; font-weight: bold">and</span> Flammarion, Nicolas
-    <span style="color: #000000; font-weight: bold">and</span> Chiang, Mung <span style="color: #000000; font-weight: bold">and</span> Mittal, Prateek <span style="color: #000000; font-weight: bold">and</span> Matthias Hein},
-    journal<span style="color: #333333">=</span>{arXiv preprint arXiv:2010.09670},
-    year<span style="color: #333333">=</span>{2020}
+        <pre style="margin: 0; line-height: 125%"><span style="color: #555555; font-weight: bold">@article</span>{yan2022sysnoise,
+    title<span style="color: #333333">=</span>{SysNoise: Exploring and Benchmarking Training-Deployment System Inconsistency},
+    author<span style="color: #333333">=</span>{Yan Wang <span style="color: #000000; font-weight: bold">and</span> Yuhang Li <span style="color: #000000; font-weight: bold">and</span> Ruihao Gong <span style="color: #000000; font-weight: bold">and</span> Aishan Liu <span style="color: #000000; font-weight: bold">and</span> Yanfei Wang
+    <span style="color: #000000; font-weight: bold">and</span> Jian Hu <span style="color: #000000; font-weight: bold">and</span> Yongqiang Yao <span style="color: #000000; font-weight: bold">and</span> Tianzi Xiao
+          <span style="color: #000000; font-weight: bold">and</span> Fengwei Yu <span style="color: #000000; font-weight: bold">and</span> Xianglong Liu},
+    year<span style="color: #333333">=</span>{2022}
 }</pre>
       </div>
 
@@ -390,10 +396,9 @@ clean_acc, robust_acc = benchmark(model,
 
   <hr class="bottomrule" />
 
-<!--  <footer>-->
-<!--    <small>&copy; 2021, RobustBench;-->
-<!--      <a href="https://icons8.com/icon/100413/access">Icons from Icons8</a></small>-->
-<!--  </footer>-->
+  <footer>
+    <small>&copy; 2022, SysNoise, SenseTime;
+  </footer>
 
   <script>
     // When the user scrolls the page, execute myFunction
